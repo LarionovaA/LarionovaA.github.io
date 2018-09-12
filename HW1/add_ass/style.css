@@ -1,0 +1,28 @@
+body {
+	font: 1em Arial;
+	
+}
+div {
+	position: relative;
+}
+#upper {
+	background-color: white;
+	color: black;
+	font-size:200%;
+	text-align: center;
+}
+h1 {
+	background-color: #7FFFD4;
+	color: #FFFFFF;
+	font-size: 150%;
+}
+.example {
+position: absolute;
+    top: 20px;
+  
+}
+.result {
+position: absolute;
+left: 620px;
+top: 100px;
+}
