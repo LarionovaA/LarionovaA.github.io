@@ -2,8 +2,16 @@ body {
 	font: 1em Arial;
 	
 }
+h1 {
+	background-color: #7FFFD4;
+	color: #FFFFFF;
+	font-size: 150%;
+}
 div {
-	position: relative;
+  margin: 0;
+  padding: 20px;
+  background: #e7e6d4;
+  overflow: auto;
 }
 #upper {
 	background-color: white;
@@ -11,18 +19,12 @@ div {
 	font-size:200%;
 	text-align: center;
 }
-h1 {
-	background-color: #7FFFD4;
-	color: #FFFFFF;
-	font-size: 150%;
-}
-.example {
-position: absolute;
-    top: 20px;
-  
-}
+.example,
 .result {
-position: absolute;
-left: 620px;
-top: 100px;
-}
+  float: left;
+  width: calc(90% / 2 - 20px);
+  height: auto;
+  margin-right: 20px;
+  background: #ffffff;
+  border: 3px dashed #666666;
+	}
