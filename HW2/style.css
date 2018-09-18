@@ -1,0 +1,10 @@
+body {
+    background-color: #D3D3D3;
+    font-size: 1.4em;
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+    color: #4b0082;
+    border-bottom: 1px dashed #4b0082;;
+}
