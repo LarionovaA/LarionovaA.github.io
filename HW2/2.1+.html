@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Формат WebP </title>
-    <lang="ru">
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
@@ -30,7 +29,7 @@
     <p>Формат WebP позволяет получить сжатую картинку с альфа-каналом без потерь. Раньше, чтобы получить прозрачность все изображение должно было быть lossless. А в WebP можно уменьшить вес картинки с прозрачными областями.</p>
     <h2>Цветовое преобразование</h2>
     <p>Также в WebP используется методы адаптивного квантования цветовой составляющей, чтобы предотвратить влияние цветовых каналов друг на друга. Изображение делится на блоки и для каждого блока применяется свой режим трансформации green_to_red, green_to_blue или red_to_blue. Цветовое преобразование сохраняет неизменным значение зеленого канала G, преобразует красный R в зависимости от зеленого, и синий В в зависимости от зеленого, а затем в зависимости от красного.</p>
-    <h2>Преимущества и недостатки</h1>
+    <h2>Преимущества и недостатки</h2>
     <p>К <b>преимуществам</b> можно отнести меньший размер файла, улучшенный алгоритм сжатия, более качественные переходы цвета и маску альфа-канала</p>
     <p><b>Недостатками</b> же являются плохая поддержка браузерами (о ней чуть ниже), искажение имеет пластиковый вид. Так же важно понимать, что WebP не является и его нельзя, ни в коем случае, воспринимать как 100% замену PNG и JPEG. Это формат только для браузеров, которые могут с ним работать, но иметь другой формат для других браузеров придется, несомненно.</p>
     <a href="#top">Вернуться в начало</a>
@@ -38,32 +37,32 @@
     <p>Для проверки эффективности сжатия использовалась программы XnConvert и Adobe Photoshop. Исходное изображение в формате PNG сжималось в WebP с установкой объема 100кб. После этого оно еще раз конвертировалось в JPEG таким образом, чтобы объем файла совпадал с размером WebP.<br>
     Как показало сравнение, артефакты на картинках в WebP также присутствуют даже при средних настройках качества, однако во всех случаях они менее заметны, чем в JPEG. Особенно хорошо новый формат проявляет себя при высокой степени сжатия (малом размере файла). Там, где JPEG уже буквально распадается на квадраты, WebP выглядит достаточно неплохо.</p>
     <h2>Оригинальное изображение PNG, объем 3 836 кб</h2>
-    <img src="image/png/evening.png" width="500" height="350">
+    <img src="image/png/evening.png" title="изображение" alt="PNG" width="500" height="350">
     <h2>JPEG</h2>
-    <img src="image/jpeg/evening.jpg" width="500" height="350">
+    <img src="image/jpeg/evening.jpg" title="изображение" alt="JPG" width="500" height="350">
     <h2>WebP</h2>
-    <img src="image/WebP/evening.webp" width="500" height="350">
+    <img src="image/WebP/evening.webp" title="изображение" alt="WEBP" width="500" height="350">
     <h2>Разница</h2>
-    <img src="image/comparison/evening/bridge.png" width="900" height="300">
-    <img src="image/comparison/evening/cars.png" width="900" height="300">
-    <img src="image/comparison/evening/street.png" width="900" height="300">
+    <img src="image/comparison/evening/bridge.png" title="изображение" alt="PNG" width="900" height="300">
+    <img src="image/comparison/evening/cars.png" title="изображение" alt="PNG"width="900" height="300">
+    <img src="image/comparison/evening/street.png" title="изображение" alt="PNG" width="900" height="300">
     <h2>Оригинальное изображение PNG, объем 2 204 кб</h2>
-    <img src="image/png/nature.png" width="500" height="350">
+    <img src="image/png/nature.png" title="изображение" alt="original" width="500" height="350">
     <h2>JPEG</h2>
-    <img src="image/jpeg/nature.jpg" width="500" height="350">
+    <img src="image/jpeg/nature.jpg"title="изображение" alt="JPG" width="500" height="350">
     <h2>WebP</h2>
-    <img src="image/WebP/nature.webp" width="500" height="350">
+    <img src="image/WebP/nature.webp" title="изображение" alt="WEBP" width="500" height="350">
     <h2>Разница</h2>
-    <img src="image/comparison/nature/church.png" width="900" height="300">
-    <img src="image/comparison/nature/house.png" width="900" height="300">
+    <img src="image/comparison/nature/church.png"title="изображение" alt="PNG" width="900" height="300">
+    <img src="image/comparison/nature/house.png" title="изображение" alt="PNG" width="900" height="300">
     <h2>Оригинальное изображение PNG, объем 1 927 кб</h2>
-    <img src="image/png/cat.png" width="400" height="350">
+    <img src="image/png/cat.png" title="изображение" alt="original"width="400" height="350">
     <h2>JPEG</h2>
-    <img src="image/jpeg/cat.jpg" width="400" height="350">
+    <img src="image/jpeg/cat.jpg" title="изображение" alt="JPG" width="400" height="350">
     <h2>WebP</h2>
-    <img src="image/WebP/cat.webp" width="400" height="350">
+    <img src="image/WebP/cat.webp" title="изображение" alt="WEBP" width="400" height="350">
     <h2>Разница</h2>
-    <img src="image/comparison/cat/pillow.png" width="900" height="300">
+    <img src="image/comparison/cat/pillow.png" title="изображение" alt="PNG" width="900" height="300">
     <a href="#top">Вернуться в начало</a>
     <h1 id="crb">Кроссбраузерность</h1>
     <p>В настоящее время просмотр изображений в формате WebP поддерживается браузерами Google Chrome (начиная с 9 версии) и Opera (начиная с версии 11.10). Начиная с версии 26 также поддерживается браузером Pale Moon.<br>Android поддерживает чтение и запись WebP изображений начиная с версии 4.0.<br>С помощью специальной JavaScript-библиотеки возможно отображение в браузерах, поддерживающих видео в формате WebM, в частности, в Firefox 4.0 и более новых.<br> Существует также порт библиотеки libwebp под названием libwebpjs/libwebpas на JavaScript и ActionScript, позволяющий использовать WebP во всех популярных браузерах (поддержка IE6+ осуществляется с помощью дополнительного модуля Adobe Flash).</p>
