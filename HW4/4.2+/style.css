@@ -1,0 +1,20 @@
+.polaroid {
+ position: relative;
+ width: 630px;
+}
+ 
+.polaroid img {
+ border: 10px solid #AFEEEE;
+ border-bottom: 45px solid #AFEEEE;
+ box-shadow: 3px 3px 3px #697963;
+}
+ 
+.polaroid p {
+
+ position: absolute;
+ text-align: center;
+ width: 100%;
+ bottom: 0px;
+ font: 'Pattaya', sans-serif;
+ color: #1f4442;
+}
