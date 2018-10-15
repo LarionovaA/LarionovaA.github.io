@@ -1,0 +1,70 @@
+
+a {
+    color: green;
+}
+a:hover {
+    color: red;
+}
+div {
+    padding: 15px;
+    width: 900px;
+}
+img {
+    vertical-align: -8px
+}
+/* Ссылки в строку расположены с помощью таблицы,
+разделитетли сделаны путем выделения необходимой стороны
+ячейки  Главное достоинство - ячейки таблиц выравниваются
+по сетке, что позволяет заполнить плоскость 
+окна браузера и создавать "резиновую верстку".*/
+.variant1 table {
+    border-collapse: collapse;
+    border: 2px solid white;
+}
+.variant1 td {
+    padding: 3px;
+    border-right: 2px solid red;
+    text-align: center;
+}
+
+.variant1 td:last-child {
+    border-right: 2px solid white;
+}
+
+
+/* В данном варианте использовался 
+список в горизонтальном положении. 
+В качестве разделителя выступала 
+картинка. Для меня минусом явилась
+сложность подгона разделителей друг
+под друга ровно*/
+
+.variant2 ul {
+    padding-left: 3px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.variant2 li {
+    display: inline-block;
+    margin-left: -0.24em;
+}
+.variant2 li:first-child {
+    margin-left: 1px;
+}
+/* в этом варианте каждая ссылка обернута в блок,
+свойство display для которых строчное.Преимущество 
+блочной, как и табличной верстки в том, что при необходимости
+их можно сделать "резиновыми" */
+.variant3 div {
+    display: inline;
+    padding: 0;
+    margin-right: 3px
+}
+.variant3 div:first-child {
+    margin-left: 3px;
+}
+
+
+/* variant4 самый простой и быстрый способ выстроить в ряд ссылки оказался в 
+применении строчного тега span  Недостатки в том, что при необходимости
+задать задний фон для каждой ссылки, этого сделать не получится*/
