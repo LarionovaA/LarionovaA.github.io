@@ -1,0 +1,27 @@
+body {
+    font-family: "PT Sans, Verdana, sans-serif";
+    background-color: #e8ebea;
+    line-height: 1.5;
+}
+.common h1 {
+    font-size: 20px;
+    text-align: center;
+    color: #00040e;
+}
+#about, #working, #crossbr {
+    color: #5389a6;
+}
+
+div.common {
+    padding: 10px;
+    font-family: Georgia, serif
+}
+
+div.menu  {
+    color: blue;
+    padding-left: 50px;
+    white-space: pre
+}
+div.content {
+    padding: 20px
+}
