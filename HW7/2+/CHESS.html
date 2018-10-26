@@ -9,7 +9,9 @@
         <style>
          @media print { 
           p {color:black !important;}
-          a:not([href*="//"]) {visibility: hidden}
+          a[href^=http]:after {
+        content:" <" attr(href) "> ";
+    }
         }
         .name {
             font-weight: bold; font-size: 24px;
