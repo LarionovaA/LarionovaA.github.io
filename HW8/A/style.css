@@ -1,0 +1,40 @@
+p {
+ margin-top: 10px 
+}
+form {
+ margin-bottom: -10px;
+}
+div {
+  font-size: 1em;
+  margin-top: 0.4em;
+  clear: both
+}
+
+.tittle {
+  margin-right: 4em;
+ }
+.rubric {
+  margin-right: 7.2em
+}
+.public {
+  margin-right: 5.2em;
+  float:left;
+}
+textarea {
+  width: 39.5em
+}
+#tittle{
+  width: 26em
+}
+.radio_c{
+    display: inline-block;
+}
+@media screen and (max-width: 420px) {
+span.public {
+    clear:both;
+}
+div.radio_c {
+    display: block;
+}
+}
+

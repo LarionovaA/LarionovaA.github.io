@@ -1,0 +1,107 @@
+.body {
+	font: 15px Arial, sans-serif
+}
+.container {
+	width: 100%
+}
+.float_window{
+	position: fixed; right:3em; top:3em;
+	border:2px solid blue;
+	background-color:lightgreen;
+	width:6em;
+	height:3em;
+	text-align:center;
+	padding-top: 0.5em;
+}
+.header {
+	text-align: center;
+	padding: 10px;
+	background-color: lightblue;
+	text-transform: uppercase;
+	color: blue;
+	font-size: 22px
+}
+.middle {
+	background: url(maket/ball.png) right top repeat-y,
+	url(maket/menu.jpg) left top repeat-y
+}
+
+.menu {
+	width: 188px;
+	float: left
+}
+.scroll {
+	font-size: 1em;
+	margin-left: 5px
+}
+ul {
+	padding-left: 25px
+}
+.content {
+	margin-left:188px;
+	padding: 10px
+}
+.headline {
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-right: 20px
+}
+.photo {
+	float: left;
+	margin: 10px 20px 10px 0
+}
+.empty {
+	clear: both;
+}
+.footer {
+	background-color: lightblue;
+	height: 65px;
+	font-size: 22px;
+	color: blue;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 1.5em;
+}
+.menu_adapt {
+	visibility: hidden;
+}
+@media screen and (max-width: 50rem) {
+	html {
+		overflow-x: hidden
+	}
+	div.content {
+		margin-left: 10px;
+		width: 100%;
+		padding:0
+	}
+	div.menu {
+		display: none;
+	}
+	div.middle {
+		background: url(maket/middle_adapt.jpg)
+	}
+	h3.headline {
+		margin: 0;
+		padding: 5px;
+	}
+	img.photo {
+		width: 94%;
+	}
+	body p {
+		font: 1.2em Arial, sans-serif;
+		padding-right: 0.7em
+	}
+	div.menu_adapt {
+		background: url(maket/menu_adapt.jpg);
+		visibility: visible;
+		font-size: 1.4em;
+		padding:0.5em 0 0.5em 0;
+		margin: 0.5em 0.5em 0.5em -0.5em;
+	}
+	div.footer {
+		margin-top: -1em;
+		padding-top: 0.5em;
+	}
+
+}

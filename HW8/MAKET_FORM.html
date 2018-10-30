@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <fieldset>
+    <form action="http://fe.it-academy.by/TestForm.php" method="get">
+        <label>Название статьи: <input type="text" name="tittle"></label><br>
+        <label>Рубрика:
+            <select name="headingname">
+                <option value="1">программирование</option>
+                <option value="2">веб-дизайн</option><option value="3">тестирование</option><option value="4">администрирование</option>
+            </select>
+        </label><br>
+        <label>Публикация<input type="radio" name="site" value="1">на сайте
+            <input type="radio" name="magazine" value="2">в журнале<input type="radio" name="site_magazine" value="3">на сайте и в журнале</label><br>
+        <label>Разрешить комментарии: <input type="checkbox" name="yes" checked></label><br>
+        <label>Текст статьи:<br> <textarea name="article" size="2"></textarea></label><br>
+        <label><input type="submit" name="public" value="Опубликовать"></label>
+        </fieldset>
+    </form>
+</body>
+</html>
