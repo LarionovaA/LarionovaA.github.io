@@ -10,21 +10,10 @@ ul{
 }
 .designation{
     float:left;
+    width: 20%;
 }
 .block{
     display: inline-block;
-}
-.name_article {
-    margin-right: 5em;
-}
-.name_rubric {
-    margin-right: 8.9em;
-}
-.place_to_publish {
-margin-right: 6.9em
-}
-.allow_comments {
-margin-right: 1.1em
 }
 .width_name, #tittle, #article {
     width:100%;

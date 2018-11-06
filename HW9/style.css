@@ -1,0 +1,29 @@
+ #content{
+ position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 300px;
+}
+#content img{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    z-index: 1
+}
+.man_and_woman {
+  left: 150px;
+}
+.yin_and_yang {
+  top: 150px;
+  left: 75px
+}
+.no_smoke {
+top: 75px;
+left: 75px
+}
+
+#content img:hover {
+    z-index: 10
+}
