@@ -1,0 +1,15 @@
+body {
+    background-color: #F0F3F2
+}
+.art-header {
+    border-bottom: 5px solid #E04040;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    height: 90px;
+    background-position: 0 0;
+    position: relative;
+    width: 1256px;
+    z-index: auto !important;}
+.art-logo {
+    width:20%;
+}
