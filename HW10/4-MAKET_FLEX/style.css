@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-flow: row wrap
+
+}
+.content{
+    flex-direction: row;
+    align-self: center;
+}
+.menu{
+    flex: 0 1 200px;
+    align-self: flex-start;
+}
+.text{
+align-self: baseline;
+ flex: 0 1 800px;
+}
+.header{
+    align-self: baseline;
+    flex: 0 1 auto;
+}
+.footer{
+align-self: flex-end;
+width: 100%
+}

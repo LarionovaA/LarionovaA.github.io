@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG_TEST</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <svg viewBox="10 30 600 100" style="width: 100%">
+      <defs>
+        <path id="home" d="M100 59.375l-18.75-18.75v-28.125h-12.5v15.625l-18.75-18.75-50 50v3.125h12.5v31.25h31.25v-18.75h12.5v18.75h31.25v-31.25h12.5z" 
+        transform="translate(2, 2) scale(.95)"/>
+        <linearGradient id="stripes" 
+        x1="0" y1="0" x2="100%" y2="0%">
+        <stop stop-color="hsl(45,100%,65%)" offset="0"/>
+        <stop stop-color="hsl(320,100%,65%)" offset="50%"/>
+        <stop stop-color="hsl(200,100%,60%)" offset="100%"/>   </linearGradient>
+    </defs>
+</svg>
+<div class="wrapper">
+  <ul class="icons icons--stroke">
+    <li class="icon">  
+      <svg viewbox="0 0 100 100">
+        <use xlink:href="#home">
+        </svg>
+    </li>  
+</div>  
+</body>
+</html>
