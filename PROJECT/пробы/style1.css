@@ -1,0 +1,246 @@
+body {
+    padding: 0;
+    margin: 0;
+    min-width: 1256px;
+    color: #404040;
+}
+#art-main {
+    background: #FFFFFF;
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: Open Sans;
+    font-weight: normal;
+    font-style: normal;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    left: 0;
+    top: 0;
+    cursor: default;
+    overflow: hidden;
+}
+#ultra {
+    margin: 0 auto;
+    width: 1256px;
+    height: 136px;
+}
+.art-header {
+    border-bottom: 5px solid #E04040;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    height: 90px;
+    background-image: url(http://slutsk-gorod.by/templates/sg3/images/header.png);
+    background-position: 0 0;
+    position: relative;
+    width: 1256px;
+    /* z-index: auto !important; */
+}
+.art-sheet {
+    background: #FFFFFF;
+    margin: 0 auto;
+    position: relative;
+    cursor: auto;
+    width: 1256px;
+    z-index: auto !important;
+}
+.art-header:before, #art-header-bg:before, .art-layout-cell:before, .art-layout-wrapper:before, .art-footer:before, .art-nav:before, #art-hmenu-bg:before, .art-sheet:before {
+    width: 100%;
+    content: " ";
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.art-content-layout {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.art-content-layout-row {
+    display: table-row;
+}
+.art-layout-cell.art-layout-sidebar-bg {
+    margin-bottom: 4px;
+    display: block;
+    float: left;
+    margin-top: 10px;
+}
+.art-layout-cell.art-layout-sidebar-bg {
+    margin-bottom: 4px;
+    display: block;
+    float: left;
+    margin-top: 10px;
+}
+.art-layout-cell.art-layout-sidebar-bg {
+    margin-bottom: 4px;
+    display: block;
+    float: left;
+    margin-top: 10px;
+}
+.art-layout-cell.art-layout-sidebar-bg .art-block {
+    margin: 0;
+    padding: 0;
+}
+.art-block.clearfix_bantop .art-blockcontent {
+    margin: 0;
+    padding: 0;
+}
+.art-blockcontent a:visited, .art-blockcontent a.visited {
+    color: #57AEE0;
+    font-family: Open Sans;
+    text-decoration: none;
+}
+div.art-block img {
+    border: none;
+    margin: 0;
+}
+div.clr {
+    clear: both;
+}
+.art-header:after, #art-header-bg:after, .art-layout-cell:after, .art-layout-wrapper:after, .art-footer:after, .art-nav:after, #art-hmenu-bg:after, .art-sheet:after, .cleared, .clearfix:after {
+    clear: both;
+    font: 0/0 serif;
+    display: block;
+    content: " ";
+}
+.art-layout-wrapper {
+    position: relative;
+    margin: 0 auto 0 auto;
+    z-index: auto !important;
+}
+.art-content-layout {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.art-content-layout-row {
+    display: table-row;
+}
+.art-content-layout .art-content {
+    margin: 0 auto;
+    width: 760px;
+}
+.art-content-layout {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.art-content-layout-row {
+    display: table-row;
+}
+.art-layout-cell {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: top;
+}
+.art-post_catNews {
+    background: #f0f0f0;
+    display: block;
+    position: absolute;
+    width: 582px;
+    height: 25px;
+    border-top: 3px #2e9ad8 solid;
+}
+.art-postcontent, .art-postcontent li, .art-postcontent table, .art-postcontent a, .art-postcontent a:link, .art-postcontent a:visited, .art-postcontent a.visited, .art-postcontent a:hover, .art-postcontent a.hovered {
+    font-family: Open Sans;
+    line-height: 25px;
+}
+article.art-post_catNews ul.menu_catNews {
+    margin: -3px 0px !important;
+    padding: 0px;
+}
+ul.menu_catNews li {
+    margin: 3px 0px 0px 0px;
+}
+.art-post_addNews {
+    margin-left: 582px;
+}
+.art-postcontent a:visited, .art-postcontent a.visited {
+    font-family: Open Sans;
+    text-decoration: underline;
+    color: #57AEE0;
+}
+article.art-post_slu-news-ico {
+    margin-bottom: -3px;
+}
+.art-post_novostiNew {
+    width: 756px;
+    margin-top: 3px;
+}
+article.art-post_glBanNews {
+    margin-top: 4px;
+}
+.clr {
+    clear: both;
+    height: 0;
+    line-height: 0;
+    display: block;
+    float: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.art-nostyle_belNewsIco {
+    margin-top: 4px;
+    margin-bottom: -2px;
+}
+a {
+    color: #16a4ec;
+}
+a img {
+    border: 0;
+}
+.art-nostyle_gaid {
+    margin-top: 29px;
+}
+.art-nostyle_zss {
+    position: absolute;
+    margin-left: 220px;
+    margin-top: 5px;
+}
+.art-footer a, .art-footer a:link {
+    color: #57AEE0;
+    font-family: Open Sans;
+    text-decoration: underline;
+}
+#zss1 {
+    background: url(http://slutsk-gorod.by/images/zss/zss1.png);
+}
+#zss2 {
+    background: url(http://slutsk-gorod.by/images/zss/zss2.png);
+}
+#zss3 {
+    background: url(http://slutsk-gorod.by/images/zss/zss3.png);
+}
+#zss4 {
+    background: url(http://slutsk-gorod.by/images/zss/zss4.png);
+}
+#zss5 {
+    background: url(http://slutsk-gorod.by/images/zss/zss5.png);
+}
+#zss6 {
+    background: url(http://slutsk-gorod.by/images/zss/zss6.png);
+}
+.art-footer {
+    border-top: 3px solid #E03E3E;
+    padding: 14px 14px 14px 14px;
+    margin: 0 auto;
+    position: relative;
+    color: #404040;
+    font-size: 13px;
+    font-family: Open Sans;
+    line-height: 175%;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 24px;
+}
+.art-footer img {
+    border: none;
+    margin: 0;
+}
+#scrollToTop {
+    width: 100%;
+    font-size: 16px;
+    font-family: Open Sans;
+}
