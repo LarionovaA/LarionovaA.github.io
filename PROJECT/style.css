@@ -1,167 +1,106 @@
-html, body {
-    height: 100%;
-}
 body {
-    padding: 0;
-    margin: 0;
-    width: 1256px;
-    color: #404040;
+        display: flex;
+    justify-content: center;
 }
-#art-main {
-    background: #FFFFFF;
-    margin: 0 auto;
-    font-size: 15px;
-    font-family: Open Sans;
-    font-weight: normal;
-    font-style: normal;
-    position: relative;
-    width: 100%;
-    min-height: 100%;
-    left: 0;
-    top: 0;
-    overflow: hidden;
-}
-#ultra{
+#art-main{
     display: flex;
-    flex-basis: 60em
+    flex-direction: column;
 }
-.banneritem {
-    margin: auto
-}
-
-a {
-    color: #16a4ec;
-}
-div.clr {
-    clear: both;
-}
-.clr {
-    height: 0;
-    line-height: 0;
-    display: block;
-    float: none;
-    padding: 0;
-    margin: 0;
-    border: none;
-}
-.art-header {
-    border-bottom: 5px solid #E04040;
-    margin: -0.5em auto;
-    background-repeat: no-repeat;
-    height: 90px;
-    background-color: #fdfcfc;
-    background-position: 0 0;
-    position: relative;
-    width: 1256px;
-}
-#poloskaHead{
-    width: 1256px;
-    background-color: #d7dfea;
+.poloskaHead{
     display: flex;
-    height: 30px;
+    flex-direction: row;
     justify-content: flex-end;
+        height: 30px;
+    background: #f0f0f0;
+    margin-top: -0.4em;
 }
 .art-search{
-    display: flex;
-    flex-basis: 220px;
-    flex-direction: row;
-    height: 28px;
+    position: relative;
 }
 form.art-search{
-    border: 0;
     margin: 2px;
 }
+input#mod-search-searchword.inputbox_poisk, input.art-search-button{
+    border-bottom: 2px solid #c0c0c0;
+}
 .art-search input[type="text"]{
-    flex: 3 1 220px;
+    background: #f8f8f8;
+    border:0;
+    border-radius: 0;
+    margin: 0 auto;
     width: 220px;
     height: 28px;
-    background: #f8f8f8;
-    padding: 4px 12px;
-    font-size: 13px;
-    font-family: Open Sans;
+    padding: 4px 0 4px 12px;
+    box-sizing: border-box;
+    color: #404040 !important;
+    font-size: 1em;
+    font-family:'Open Sans', sans-serif;
     font-weight: bold;
     font-style: normal;
-    color: #c0c0c0 !important;
-box-sizing: border-box;
-        border-radius: 0;
-    border-width: 0;
-    margin: 0 auto;
+    position: absolute;
+    right:0
 }
-input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="number"], input[type="range"], input[type="tel"], input[type="time"], input[type="week"], textarea {
-    border: 1px solid #B9C2CB;
-    margin: 0 auto;
-}
-.art-search input[type="submit"]{
-    flex: 1 1 24px;
+
+::-webkit-input-placeholder {color:#c0c0c0;font-size: 0.8em}
+::-moz-placeholder {color:#c0c0c0;font-size: 0.8em}/* Firefox 19+ */
+:-moz-placeholder {color:#c0c0c0;font-size: 0.8em}/* Firefox 18- */
+:-ms-input-placeholder {color:#c0c0c0;font-size: 0.8em}
+input:focus::-webkit-input-placeholder {color:transparent;text-overflow:ellipsis}
+input:focus:-moz-placeholder {color:transparent;text-overflow:ellipsis}
+input:focus::-moz-placeholder {color:transparent;text-overflow:ellipsis}
+input:focus:-ms-input-placeholder {color:transparent;text-overflow:ellipsis}
+ 
+form.art-search input[type="submit"]{
+    position: absolute;
+    right: 0;
+    border: none;
     background: url(http://slutsk-gorod.by/templates/sg3/images/searchicon.png) center center no-repeat;
     width: 24px;
     height: 100%;
     padding: 0;
     color: #FFFFFF !important;
     cursor: pointer;
-    
 }
-input, select, textarea, a.art-search-button span {
-    vertical-align: middle;
-    font-size: 13px;
-    font-family: Open Sans;
-    font-weight: normal;
-    font-style: normal;
+.art-header{
+    border-bottom: 5px solid #E04040;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    height: 90px;
+    background-image: url(http://slutsk-gorod.by/templates/sg3/images/header.png);
+    background-position: 0 0;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
 }
-nav.art-nav {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+.art-logo img{
+    margin-top: 6px
 }
 .art-nav {
+
     position: absolute;
     margin: 0;
     bottom: 11px;
     width: 100%;
     z-index: 100;
-    text-align: right;
+ 
 }
 ul.art-hmenu {
-    display: inline-block;
-    vertical-align: bottom;
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    position:absolute;
+top: -2em;
+list-style: none
 }
-ul.art-hmenu, ul.art-hmenu ul {
-    min-height: 0;
+
+ul.art-hmenu li li{
+    visibility: hidden
 }
-ul.art-hmenu, ul.art-hmenu ul {
-    display: block;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    list-style-type: none;
+ul.art-hmenu li{
+    margin:0 0.5em 0 0;
+    flex-basis: 100px
+} 
+.item-227{
+    margin-left: 15em;
 }
-table, ul.art-hmenu {
-    font-size: 13px;
-    font-family: Open Sans;
-    font-weight: normal;
-    font-style: normal;
-}
-.art-hmenu {
-    float: right;
-}
-ul.art-hmenu>li:first-child {
-    margin-left: 4px;
-}
-ul.art-hmenu>li {
-    margin-left: 7px;
-}
-ul.art-hmenu li {
-    position: relative;
-    z-index: 5;
-    display: block;
-    float: left;
-    background: none;
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-ul.art-hmenu>li {
-    margin-left: 7px;
-}
-ul.art-hmenu>li:last-child, ul.art-hmenu>li.last-child {
-    margin-right: 4px;
-}
+
