@@ -1,75 +1,91 @@
-.container{
-    width: 100%
-}
-.content{
-    display: flex;
-    flex-direction: row;
-}
-.menu{
-    flex: 3 1 200px;
-    background-color: #eaea4d;
-    vertical-align: top
-}
-.menu h2{
-    font-size: 1em;
-    margin-left: 5px
-}
-.menu ul{
-    padding-left:25px
-}
-.text{
-    align-self: baseline;
-    flex: 1 1 80%;
-    background: url(maket/ball.png) top right repeat-y;
-    padding: 20px
-}
-.text h3{
-    text-transform: uppercase;
-    text-align: center
-}
-.text img{
-    float: left;
-    margin-bottom: 10px;
-    margin-right: 20px;
-    color: blue
-}
 .header, .footer{
     background-color: lightblue;
     text-align: center;
     color: blue;
-    height: 65px;
-    font-size: 22px;
-    padding-top: 10px;
+    height: 3em;
+    font-size: 1.5em;
+    padding:0.5em;
     text-transform: uppercase;
     height: 100%;
 }
-@media screen and (max-width: 30rem){
-    .header, .footer{
-        display: none
+.menu h2{
+    font-size: 1.2em;
+    padding-left: 1em;
+    font-weight: bold
+}
+.menu ul{
+    margin-right: 2em;
+    text-align: left
+}
+.content{
+    display: flex;
+    flex-flow: row nowrap;
+    flex-basis: 40%
+}
+.menu{
+    flex: 1 1 20%;
+    background-color: #eaea4d;
+    vertical-align: top;
+}
+.text{
+
+    flex: 3 1 80%;
+    background: url(maket/ball.png) top right repeat-y;
+    padding: 1em
+}
+.text h3{
+   font-size: 1.5em;
+   font-weight: bold;
+   text-transform: uppercase;
+   text-align: center
+}
+.text img{
+    float: left;
+    margin-bottom: 0.5em;
+    margin-right: 1em;
+
+}
+@media all and (max-width: 40em){
+    .text img{
+        width: 100%;
     }
-    .content{
-        flex-direction: column;
-        width: 210px;
-        padding: 10px
-    }
-    .menu{
-        flex-grow: 1;
-        order: 2;
-        background: none
-    }
-    .menu ul {
-        padding-left: 0
-    }
-    .menu h2{
-        margin-left: 0
-    }
-    .menu ul li{
-        display: inline
-    }
-    .text{
-        flex-grow: 1;
-        order:1;
-        background: none;
-        padding: 0
-    }
+}
+@media all and (max-width: 30em){
+ .container .header,  .container .footer{
+    display: none
+}
+.content{
+    flex-flow: column wrap;
+    flex-basis: 30em;
+    width: 20em;
+    justify-content: center;
+    margin-left: 2em
+}
+.menu{
+   flex: 1 1 20%;
+   flex-grow: 1;
+   order: 2;
+   background: none
+}
+.text{
+    flex-flow: 3 1 80%
+    flex-grow: 3;
+    order:1;
+    background: none;
+    padding: 0
+}
+.text img{
+    margin: 0
+}
+.content .menu ul {
+    padding-left: 0
+}
+.content .menu h2{
+    margin-left: 0
+}
+.content .menu ul li{
+  display: inline;
+  margin-right: 0.5em;
+  white-space: nowrap;
+}
 }
