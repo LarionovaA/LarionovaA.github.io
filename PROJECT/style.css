@@ -1,118 +1,167 @@
+html, body {
+    height: 100%;
+}
 body {
-    background-color: #F0F3F2;
-    margin: 5px;
-    font-size: 100%
+    padding: 0;
+    margin: 0;
+    width: 1256px;
+    color: #404040;
 }
-.banner-top{
-width:1342px;
-}
-.art-header {
-    background-color: #c8d6d1;
-    height: 262px;
-    border-bottom: 5px solid #4b826d;
+#art-main {
+    background: #FFFFFF;
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: Open Sans;
+    font-weight: normal;
+    font-style: normal;
     position: relative;
-    white-space: nowrap;
+    width: 100%;
+    min-height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+#ultra{
+    display: flex;
+    flex-basis: 60em
+}
+.banneritem {
+    margin: auto
 }
 
 a {
+    color: #16a4ec;
+}
+div.clr {
+    clear: both;
+}
+.clr {
+    height: 0;
+    line-height: 0;
     display: block;
+    float: none;
     padding: 0;
-    text-decoration: none;
-    outline: none;
-    font-family: 'Lora', serif;
-    transition: .5s linear;
-}
-
-.logo{
-    float:left;
-    margin-top: -4px
-}
-#search {
-    position: absolute;
-    top:140px;
-    right:5px
-}
-.art-search input {
+    margin: 0;
     border: none;
-    box-sizing: border-box;
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.84), inset 0 1px 2px rgba(0,0,0,0.3);
-    border-radius: 20px;
-    background: #EEE;
-    font: 15px Tahoma, Arial, sans-serif;
-    color: #555;
-    outline: none;
 }
-.art-search .art-search-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40px;
-    height: 100%;
-    cursor: pointer;
-    background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
-    opacity: 0.5;
-}
-.art-search .art-search-button:hover {
-    opacity: 0.8;
-}
-
-.art-nav {
-    margin-left: 243px;
-}
-.topmenu {
+.art-header {
+    border-bottom: 5px solid #E04040;
+    margin: -0.5em auto;
+    background-repeat: no-repeat;
+    height: 90px;
+    background-color: #fdfcfc;
+    background-position: 0 0;
     position: relative;
-    top: 60px;
-    z-index: 100;
+    width: 1256px;
 }
-ul.topmenu {
-    list-style: none;
-    padding: 0;
-    font-size: 1.2em;
-    font-family: Open Sans;
+#poloskaHead{
+    width: 1256px;
+    background-color: #d7dfea;
+    display: flex;
+    height: 30px;
+    justify-content: flex-end;
 }
-.topmenu > li {
-    display: inline-block;
-    position: relative;
-    background: none;
-    padding-right: 40px;
+.art-search{
+    display: flex;
+    flex-basis: 220px;
+    flex-direction: row;
+    height: 28px;
+}
+form.art-search{
     border: 0;
+    margin: 2px;
 }
-.topmenu > li:first-child{
-    margin-left: 32px;
+.art-search input[type="text"]{
+    flex: 3 1 220px;
+    width: 220px;
+    height: 28px;
+    background: #f8f8f8;
+    padding: 4px 12px;
+    font-size: 13px;
+    font-family: Open Sans;
+    font-weight: bold;
+    font-style: normal;
+    color: #c0c0c0 !important;
+box-sizing: border-box;
+        border-radius: 0;
+    border-width: 0;
+    margin: 0 auto;
 }
-.submenu {
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="number"], input[type="range"], input[type="tel"], input[type="time"], input[type="week"], textarea {
+    border: 1px solid #B9C2CB;
+    margin: 0 auto;
+}
+.art-search input[type="submit"]{
+    flex: 1 1 24px;
+    background: url(http://slutsk-gorod.by/templates/sg3/images/searchicon.png) center center no-repeat;
+    width: 24px;
+    height: 100%;
+    padding: 0;
+    color: #FFFFFF !important;
+    cursor: pointer;
+    
+}
+input, select, textarea, a.art-search-button span {
+    vertical-align: middle;
+    font-size: 13px;
+    font-family: Open Sans;
+    font-weight: normal;
+    font-style: normal;
+}
+nav.art-nav {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.art-nav {
     position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 10;
-    display: none;
-    background: #F0F3F2;
-}
-.art-nav ul a {
-    color: #695753;
-}
-.submenu li {
-    list-style: none;
-    height: 1.4em;
-    font-size: 16px;
-    padding-right: 10px
-}
-.art-nav ul li:hover .submenu {
-    display: block;
-}
-.art-content-layout{
-    display: table;
+    margin: 0;
+    bottom: 11px;
     width: 100%;
-    table-layout: fixed;
+    z-index: 100;
+    text-align: right;
 }
-.art-content-layout-row{
-    display: table-row;
+ul.art-hmenu {
+    display: inline-block;
+    vertical-align: bottom;
 }
-.art-layout-cell{
-    margin-bottom: 4px;
+ul.art-hmenu, ul.art-hmenu ul {
+    min-height: 0;
+}
+ul.art-hmenu, ul.art-hmenu ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style-type: none;
+}
+table, ul.art-hmenu {
+    font-size: 13px;
+    font-family: Open Sans;
+    font-weight: normal;
+    font-style: normal;
+}
+.art-hmenu {
+    float: right;
+}
+ul.art-hmenu>li:first-child {
+    margin-left: 4px;
+}
+ul.art-hmenu>li {
+    margin-left: 7px;
+}
+ul.art-hmenu li {
+    position: relative;
+    z-index: 5;
     display: block;
     float: left;
-    margin-top: 4px;
-    vertical-align: top;
-    box-sizing: border-box;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+ul.art-hmenu>li {
+    margin-left: 7px;
+}
+ul.art-hmenu>li:last-child, ul.art-hmenu>li.last-child {
+    margin-right: 4px;
 }
