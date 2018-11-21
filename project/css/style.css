@@ -150,7 +150,7 @@ header{
     width: 100%;
     height: 11.57vh;
     background-color: #fff;
-    background: url(img/logo.png) center no-repeat;
+    background: url(../img/logo.png) center no-repeat;
 }
 #main_nav a{
     text-decoration: none;
@@ -221,13 +221,13 @@ nav li{
     height: 1.25vmax;
     margin-left: 0.52vmax
 }
-.flickr{background: url('img/css_sprites.png') no-repeat -10px -98px}
-.google{background: url('img/css_sprites.png') no-repeat -54px -54px}
-.twitter{background: url('img/css_sprites.png') no-repeat -98px -54px}
-.pinterest{background: url('img/css_sprites.png') no-repeat -98px -10px}
-.dribbble{background: url('img/css_sprites.png') no-repeat -54px -10px}
-.behance{background: url('img/css_sprites.png') no-repeat -10px -10px}
-.facebook{background: url('img/css_sprites.png') no-repeat -10px -54px}
+.flickr{background: url('../img/css_sprites.png') no-repeat -10px -98px}
+.google{background: url('../img/css_sprites.png') no-repeat -54px -54px}
+.twitter{background: url('../img/css_sprites.png') no-repeat -98px -54px}
+.pinterest{background: url('../img/css_sprites.png') no-repeat -98px -10px}
+.dribbble{background: url('../img/css_sprites.png') no-repeat -54px -10px}
+.behance{background: url('../img/css_sprites.png') no-repeat -10px -10px}
+.facebook{background: url('../img/css_sprites.png') no-repeat -10px -54px}
 
 #soc_bar{
     padding: 1.25vmax;
