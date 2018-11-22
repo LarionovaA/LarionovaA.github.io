@@ -10,13 +10,19 @@
         var surname=prompt('Введите фамилию:');
         var patronymic=prompt('Введите отчество:');
         var ageStr=prompt('Введите ваш возраст:');
-        var gender=confirm('Если вы мужского пола, нажмите "ОК", если женского, нажмите "ОТМЕНА"');
+        var age=parseFloat(ageStr)
+        var genderStr=confirm('Если вы мужского пола, нажмите "ОК", если женского, нажмите "ОТМЕНА"');
+        if(genderStr)  
+  genderStr="мужской";
+       else
+  genderStr="женский";
         var fio=('Ваше ФИО:');
         var ageYears=('Ваш возраст в годах:');
         var ageDays=('Ваш возраст в днях:');
         var years5=('Через 5 дет вам будет:');
-        var genderYour=('Ваш пол:')
-        alert(fio+' '+surname+' '+name+' '+patronymic+"\n"+ageYears+' '+ageStr+"\n"+ageDays+' '+(ageStr*365)+"\n"+years5+' '+(ageStr+5))
+        var genderYour=('Ваш пол:');
+        var pension=('Вы на пенсии:');
+        alert(fio+' '+surname+' '+name+' '+patronymic+"\n"+ageYears+' '+ageStr+"\n"+ageDays+' '+(ageStr*365)+"\n"+years5+' '+(ageStr+5)+"\n"+genderYour+' '+genderStr+"\n"+pension+' ')
     </script>
 </body>
 </html>
