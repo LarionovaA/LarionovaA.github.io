@@ -10,19 +10,18 @@
         var surname=prompt('Введите фамилию:');
         var patronymic=prompt('Введите отчество:');
         var ageStr=prompt('Введите ваш возраст:');
-        var age=parseFloat(ageStr)
+        var pensAge=parseFloat(ageStr)
         var genderStr=confirm('Если вы мужского пола, нажмите "ОК", если женского, нажмите "ОТМЕНА"');
         if(genderStr)  
   genderStr="мужской";
        else
   genderStr="женский";
-        var fio=('Ваше ФИО:');
-        var ageYears=('Ваш возраст в годах:');
-        var ageDays=('Ваш возраст в днях:');
-        var years5=('Через 5 лет вам будет:');
-        var genderYour=('Ваш пол:');
-        var pension=('Вы на пенсии:');
-        alert(fio+' '+surname+' '+name+' '+patronymic+"\n"+ageYears+' '+ageStr+"\n"+ageDays+' '+(ageStr*365)+"\n"+years5+' '+(age+5)+"\n"+genderYour+' '+genderStr+"\n"+pension+' ')
+        var pens
+            if((pensAge>=55&&genderStr===false)||(pensAge>=60&&genderStr===true))
+                pens=('Да')
+            else pens=('Нет');
+        
+        alert('Ваше ФИО: '+surname+' '+name+' '+patronymic+"\n"+'Ваш возраст в годах: '+ageStr+"\n"+'Ваш возраст в днях: '+(ageStr*365)+"\n"+'Через 5 лет вам будет: '+' '+(pensAge+5)+"\n"+'Ваш пол: '+genderStr+"\n"+'Вы на пенсии: '+pens)
     </script>
 </body>
 </html>

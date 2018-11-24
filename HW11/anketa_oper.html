@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+        var name=prompt('Введите имя:');
+        var surname=prompt('Введите фамилию:');
+        var patronymic=prompt('Введите отчество:');
+        var ageStr=prompt('Введите ваш возраст:');
+        var pensAge=parseFloat(ageStr)
+        var genderStr=confirm('Если вы мужского пола, нажмите "ОК", если женского, нажмите "ОТМЕНА"');
+        alert('Ваше ФИО: '+surname+' '+name+' '+patronymic+"\n"+'Ваш возраст в годах: '+ageStr+"\n"+'Ваш возраст в днях: '+(pensAge*365)+"\n"+'Через 5 лет вам будет: '+(pensAge+5)+"\n"+'Ваш пол: '+(genderStr?'мужской':'женский')+"\n"+'Вы на пенсии: '+((pensAge>=55&&genderStr===false)||(pensAge>=60&&genderStr===true)?'да':'нет'))
+    </script>
+</body>
+</html>
