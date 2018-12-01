@@ -6,7 +6,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="icon" href="img/icon/lens.png" type="image/png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/control.js"></script>
+  <script src="js/control.js"></script>
 </head>
 <body>
   <div id="info_box">
@@ -51,14 +51,14 @@
   <header class="flex__jcontent_start">
     <div id="logo" class="main_flex__nowrap flex__jcontent_center flex__align-items_center"></div>
     <button type="button" id="menu_btn">Меню</button>
-    <nav id="main_nav">
+    <ul id="main_nav">
       <li><a  href="index.html">Главная</a></li>
       <li><a href="work.html">Фотостудия "Позитив"</a></li>
       <li><a href="about.html">Обо мне</a></li>
       <li><a href="blog.html">Блог</a></li>
       <li><a class="active" href="single_post.html">Актуальное обсуждение</a></li>
       <li><a href="contacts.html">Контакты</a></li>
-    </nav>
+    </ul>
     <div id="filter">
       <div id="title_filter" class="main_flex__nowrap flex__jcontent_end flex__align-content_center flex__align-items_center">Filter
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -87,7 +87,7 @@
       <a class="google" href="#"></a>
       <a class="twitter" href="#"></a>
       <a class="pinterest" href="#"></a>
-      <a class="dribbble "href="#"></a>
+      <a class="dribbble" href="#"></a>
       <a class="behance" href="#"></a>
       <a class="facebook" href="#"></a>
     </div>
@@ -98,7 +98,7 @@
       <div class="info_work_box main_flex flex__jcontent_between flex__align-content_strech flex__align-items_start">
         <div class="left_info line_sep">
           <div class="img_box_work">
-            <img src="img/single_post/1.jpg">
+            <img src="img/single_post/1.jpg" alt="Изображение демонстрационного характера">
           </div>
           <div class="about_work">
               <h1>Новогодняя фотосессия 2018</h1>
@@ -166,8 +166,7 @@
                                 <p>Я тоже так считаю</p>
                               </div>
                             </div>
-                         </li>
-                        </li>
+                          </li>
                       </ul>
                     </li>
                     <li>
@@ -199,7 +198,7 @@
             <p class="title_info">
               Напишите комментарий
             </p>
-            <form action="" class="main_flex__nowrap">
+            <form action="post" class="main_flex__nowrap">
               <div id="left_form">
                 <div class="input main_flex__nowrap flex__align-items_center">
                   <div class="icon_form name"></div>
@@ -255,15 +254,14 @@
             </div>
           </div>
           <div class="pr_features">
-              <p class="title_info">Архив</p>
-              <ul id="archives">
-                <a href="#"><li>2017 год (17)</li></a>
-                <a href="#"><li>2016 год (14)</li></a>
-                <a href="#"><li>2015 год (21)</li></a>
-                <a href="#"><li>2014 год (24)</li></a>
-              </ul>
+            <p class="title_info">Архив</p>
+            <ul id="archives">
+              <li><a href="#">2017 год (17)</a></li>
+              <li><a href="#">2016 год (14)</a></li>
+              <li><a href="#">2015 год (21)</a></li>
+              <li><a href="#">2014 год (24)</a></li>
+            </ul>
           </div>
-        </div>
         </div>
       </div>
     </div>
