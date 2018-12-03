@@ -140,17 +140,15 @@ header{
 #logo{
     width: 15.62vw;
     height: 11.57vh;
-    background-color: #fff;
-    background: url(../img/logo.png) center no-repeat;
-    padding: 3vw
+    background-color: #fff
 }
 #main_nav a{
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    font-size: 0.93vmax;
-    line-height: 1.66vmax;
-    height: 3.22vmax;
+    font-size: 0.93vw;
+    line-height: 1.66vw;
+    height: 3.22vw;
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
@@ -163,7 +161,7 @@ header{
     background: -webkit-linear-gradient(top, #333b3e 2%,#333b3e 46%,#333b3e 46%,#2e363a 65%,#2e363a 100%);
     background: linear-gradient(to bottom, #333b3e 2%,#333b3e 46%,#333b3e 46%,#2e363a 65%,#2e363a 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333b3e', endColorstr='#2e363a',GradientType=0 );
-    padding-right: 1.3vmax
+    padding-right: 1.3vw
 }
 #main_nav a:hover{
     background: #31bdbb;
@@ -182,13 +180,13 @@ ul{
 #title_filter{
     color: #1ab5b3;
     fill:#1ab5b3;
-    font-size: 0.98vmax;
-    padding:1.25vmax;
+    font-size: 0.98vw;
+    padding:1.25vw;
 }
 #title_filter svg{
-    width: 0.9vmax;
-    height: 0.9vmax;
-    margin-left:  0.62vmax
+    width: 0.9vw;
+    height: 0.9vw;
+    margin-left: 0.62vw
 }
 #filter li{
     list-style: none;
@@ -199,10 +197,10 @@ ul{
     margin-top: 0
 }
 #filter a{
-    font-size: 0.67vmax;
-    line-height: 1.25vmax;
+    font-size: 0.67vw;
+    line-height: 1.25vw;
     text-align: right;
-    padding: 0.41vmax 1.25vmax;
+    padding: 0.41vw 1.25vw;
     text-decoration: none;
     color: #616669
 }
@@ -213,9 +211,9 @@ ul{
     color: #fff
 }
 #soc_bar a{
-    width: 1.25vmax;
-    height: 1.25vmax;
-    margin-left: 0.52vmax
+    width: 1.25vw;
+    height: 1.25vw;
+    margin-left: 0.52vw
 }
 .flickr{background: url('../img/icon/css_sprite.png') no-repeat -182px -54px}
 .google{background: url('../img/icon/css_sprite.png') no-repeat -182px -98px}
@@ -225,20 +223,20 @@ ul{
 .behance{background: url('../img/icon/css_sprite.png') no-repeat -62px -128px}
 .facebook{background: url('../img/icon/css_sprite.png') no-repeat -182px -10px}
 #soc_bar{
-    padding: 1.25vmax;
+    padding: 1.25vw;
     border-top: 1px solid #1e282b;
     width: 100%;
-    margin-top: 1.25vmax
+    margin-top: 1.25vw
 }
 #soc_bar a:hover{
     transform: scale(0.9);
 }
 #cop{
     text-align: right;
-    font-size: 0.62vmax;
+    font-size: 0.62vw;
     color: #6b7072;
     width: 100%;
-    padding-right: 1.25vmax
+    padding-right: 1.25vw
 }
 main{
     width: 100%;
@@ -317,7 +315,7 @@ main{
     background: -moz-linear-gradient(top, #31bdbb 0%, #18a3a1 99%);
     background: -webkit-linear-gradient(top, #31bdbb 0%,#18a3a1 99%);
     background: linear-gradient(to bottom, #31bdbb 0%,#18a3a1 99%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#31bdbb', endColorstr='#18a3a1',GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#31bdbb', endColorstr='#18a3a1',GradientType=0 );
 }
 #info_box svg{
     height: 0.88vw;
@@ -340,13 +338,13 @@ main{
 }
 #info_box li{
     list-style: none;
-   font-size: 0.83vmax;
+   font-size: 0.83vw;
     color: #fff;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     align-content: center;
-    line-height: 0.78vmax;
+    line-height: 0.78vw;
     margin-bottom: 1vw
 }
 #info_box li:last-of-type{
@@ -745,7 +743,7 @@ main{
     border-bottom: 1px solid #e5e5e5
 }
 #comment{
-    font-size: 1.25vmax;
+    font-size: 1.25vw;
     font-weight: 400;
     margin-bottom: 1.14vw
 }
@@ -807,7 +805,7 @@ main{
 }
 .input input, .input textarea{
     border: 1px solid #eaeaea;
-    font-size: 0.72vmax;
+    font-size: 0.72vw;
     min-height: 3vw;
     width: 100%;
     padding: 0.93vw
@@ -923,8 +921,8 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
     }
     #main_nav a{
         justify-content: center;
-        font-size: 2.5vmax;
-        height: 6vmax
+        font-size: 2.5vw;
+        height: 6vw
     }
     #main_nav, #filter, #soc_bar, #cop{
         display: none
@@ -934,7 +932,7 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
     }
     #menu_btn{
         display: block;
-        font-size: 3vmax;
+        font-size: 3vw;
         color: #fff;
         padding: 3vw;
         width: 100%;
@@ -1096,7 +1094,7 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
     }
     .input input, .input textarea{
         min-height: 10vw;
-        font-size: 1.72vmax
+        font-size: 1.72vw
     }
     .icon_form {
         height: 10vw;
@@ -1139,8 +1137,8 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
         padding: 3vw 3.85vw 3vw 3vw
     }
     #info_box li{
-        font-size: 2.83vmax;
-        line-height: 3.78vmax
+        font-size: 2.83vw;
+        line-height: 3.78vw
     }
     #info_box svg{
         height: 3.88vw;
