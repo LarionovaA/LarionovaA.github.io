@@ -1,7 +1,6 @@
 
 $(function(){
     "use strict";
-
     $('#info').click(function(){
         $('#info_box').toggleClass('open');
     } );
@@ -11,5 +10,5 @@ $(function(){
     });
     $('#menu_btn').click(function(){
         $('#main_nav').toggleClass('open');
-    } );
+    });
 })

@@ -177,6 +177,10 @@ ul{
     padding: 0;
     margin: 0
 }
+#info_box ul{
+    padding: 0 0.5vw;
+    margin: 0
+}
 #title_filter{
     color: #1ab5b3;
     fill:#1ab5b3;
@@ -338,7 +342,7 @@ main{
 }
 #info_box li{
     list-style: none;
-   font-size: 0.83vw;
+    font-size: 0.83vw;
     color: #fff;
     display: flex;
     flex-flow: row nowrap;
@@ -411,8 +415,8 @@ main{
     padding:0 
 }
 .pr_info li a{
-    width: 3.4vw;
-    height: 3.4vw;
+    min-width: 3vw;
+    min-height: 3vw;
     margin-right: 0.67vw
 }
 .layers{background: url('../img/icon/css_sprite.png') no-repeat -130px -10px}
@@ -443,7 +447,8 @@ main{
     border: 1px solid #848484;
     padding: 0.16vw;
     margin: 0.05vw;
-   color: #848484
+    color: #848484;
+    font-size: 1.5vw
 }
 .pr_gallery img{
     width: 4vw;
@@ -466,7 +471,7 @@ main{
 .pr_features li:before{
     content: '✔';
     position: absolute;
-     top:0.65vw;
+    top:0.65vw;
     left: -0.9vw
 }
 .staff_box{
@@ -817,8 +822,8 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3vw;
-    width: 3vw;
+    min-height: 3vw;
+    min-width: 3vw;
     border: 1px solid #eaeaea
 }
 #left_form .name{
@@ -829,11 +834,6 @@ main{
 }
 #left_form .website{
     background: url('../img/icon/css_sprite.png') no-repeat -78px -10px
-}
-.icon_form{
-    background-size: contain;
-    width: 40px;
-    height: 34px;
 }
 #right_form .input textarea{
     resize: none;
@@ -1028,11 +1028,11 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
     .prog{
         height: 5vw
     }
-    .testimonials .huw img {
-    width: 8.16vw;
-    height: 8.16vw;
+    .reviews .huw img {
+        width: 8.16vw;
+        height: 8.16vw;
     }
-    .testimonials_text{
+    .reviews_text{
         margin-left: 7vw;
         margin-top: -2.2vw;
         border: none;
@@ -1047,7 +1047,10 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
         line-height: 5vw
     }
     .img_post, .img_post h2{
-        height: 40vw !important
+        height: 100% !important
+    }
+    .adapt_hidden, .icon_form{
+        display: none
     }
     .about_post h2{;
         font-size: 3.93vw;
